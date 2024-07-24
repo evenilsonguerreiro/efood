@@ -18,13 +18,12 @@ export const EstiloGlobal = createGlobalStyle`
 
 body{
 background-color: ${cores.branco};
-margin-bottom: 100px;
 
-
-}
-`
-export const container = styled.div`
+.container{
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+}
+
+}
 `

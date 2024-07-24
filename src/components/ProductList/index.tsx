@@ -1,26 +1,20 @@
 import Product from '../Product'
 import { Container, List } from './styles'
 
-const ProductList = () => (
+type Props = {
+  background: 'write' | 'black'
+}
+
+const ProductList = ({ background }: Props) => (
   <Container>
-    <div>
+    <div className="container">
       <List>
-        <Product
-          title="Hioki Sushi "
-          category="japones"
-          system={'destaque'}
-          description={'teste'}
-          imagen={'//placehold.it/472x217'}
-          infos={[]}
-        />
-        <Product
-          title="Hioki Sushi "
-          category="japones"
-          system={'destaque'}
-          description={'teste'}
-          imagen={'//placehold.it/472x217'}
-          infos={[]}
-        />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
       </List>
     </div>
   </Container>

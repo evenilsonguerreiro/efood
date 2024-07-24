@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const HeaderBar = styled.header`
+  margin-bottom: 40px;
   position: relative;
 
   img {

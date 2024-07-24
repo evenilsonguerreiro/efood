@@ -1,36 +1,36 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 import { TagContainer } from '../Tag/styles'
-import { ButtonContainer } from '../Button/styles'
 
 export const Card = styled.div`
   background-color: ${cores.branco};
-  margin-top: 40px;
   width: 472px;
   height: 398px;
+  top: 440px;
+  left: 171px;
   border: 1px solid ${cores.pink};
+  padding: 5px;
+  margin-bottom: 40px;
 
   ${TagContainer} {
     margin-right: 8px;
   }
-
-  ${ButtonContainer} {
-    margin-left: 5px;
-  }
 `
-export const Title = styled.h3`
+export const Titulo = styled.h3`
+  width: 92px;
+  height: 21px;
+  top: 665px;
+  left: 168px;
   font-size: 18px;
   color: ${cores.pink};
-  margin-left: 5px;
 `
 export const Descricao = styled.p`
+  width: 456px;
+  height: 88px;
+  top: 702px;
+  left: 179px;
   font-size: 14px;
-  color: ${cores.pink};
+  font-weight: 400px;
   line-height: 22px;
-  margin-left: 5px;
-`
-export const Infos = styled.div`
-  position: absolute;
-  top: 466px;
-  left: 455px;
+  color: ${cores.pink};
 `

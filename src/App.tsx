@@ -8,7 +8,7 @@ const rotas = createBrowserRouter([
     path: '/',
     element: (
       <>
-        <ProductList />
+        <ProductList background="write" />
       </>
     )
   }
@@ -19,7 +19,6 @@ function App() {
     <>
       <EstiloGlobal />
       <Header />
-      <div></div>
       <RouterProvider router={rotas} />
     </>
   )

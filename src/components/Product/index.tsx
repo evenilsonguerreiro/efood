@@ -1,37 +1,16 @@
 import { ButtonContainer } from '../Button/styles'
-import Tag from '../Tag'
-import { Card, Descricao, Infos, Title } from './styles'
+import { Card, Descricao, Titulo } from './styles'
 
-type Props = {
-  title: string
-  category: string
-  system: string
-  description: string
-  imagen: string
-  infos: string[]
-}
-
-const Product = ({
-  title,
-  category,
-  description,
-  imagen,
-  system,
-  infos
-}: Props) => (
+const Product = () => (
   <Card>
-    <img src={imagen} alt={title} />
-    <div>
-      {infos.map((info) => (
-        <Tag key={info}>{info}</Tag>
-      ))}
-    </div>
-    <Title>{title}</Title>
-    <Infos>
-      <Tag>{category}</Tag>
-      <Tag>{system}</Tag>
-    </Infos>
-    <Descricao>{description}</Descricao>
+    <img src="//placehold.it/472x217" />
+    <Titulo>hioki sushi</Titulo>
+    <Descricao>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+      perspiciatis quos laudantium dolores temporibus, odio, quas excepturi fuga
+      architecto illum vero perferendis laboriosam similique id doloribus nisi
+      ullam blanditiis reprehenderit?
+    </Descricao>
     <ButtonContainer>saiba mais</ButtonContainer>
   </Card>
 )
