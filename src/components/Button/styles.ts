@@ -12,6 +12,7 @@ export const ButtonContainer = styled.button`
   fontweight: bold;
   aling-item: center;
   border: none;
+  margin-top: 16px;
 `
 export const ButtonLink = styled(Link)`
   background-color: ${cores.pink};

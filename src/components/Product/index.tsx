@@ -1,17 +1,26 @@
-import { ButtonContainer } from '../Button/styles'
-import { Card, Descricao, Titulo } from './styles'
+import { Link } from 'react-router-dom'
+import Tag from '../Tag'
+import { Card, Descricao, Infos, Titulo } from './styles'
 
-const Product = () => (
+type Props = {
+  title: string
+  description: string
+  image: string
+  infos: string[]
+  button: string
+}
+
+const Product = ({ title, description, image, infos }: Props) => (
   <Card>
-    <img src="//placehold.it/472x217" />
-    <Titulo>hioki sushi</Titulo>
-    <Descricao>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-      perspiciatis quos laudantium dolores temporibus, odio, quas excepturi fuga
-      architecto illum vero perferendis laboriosam similique id doloribus nisi
-      ullam blanditiis reprehenderit?
-    </Descricao>
-    <ButtonContainer>saiba mais</ButtonContainer>
+    <img src={image} alt={title} />
+    <Infos>
+      {infos.map((info) => (
+        <Tag key={info}>{info}</Tag>
+      ))}
+    </Infos>
+    <Titulo>{title}</Titulo>
+    <Descricao>{description}</Descricao>
+    <Link to="/perfil">Saiba mais</Link>
   </Card>
 )
 export default Product

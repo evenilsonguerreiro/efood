@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-export const Container = styled.section``
+export const Container = styled.section`
+  padding: 30px 0;
+`
 
 export const List = styled.ul`
   display: grid;

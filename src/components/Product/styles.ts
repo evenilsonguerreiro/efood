@@ -6,23 +6,23 @@ export const Card = styled.div`
   background-color: ${cores.branco};
   width: 472px;
   height: 398px;
-  top: 440px;
-  left: 171px;
   border: 1px solid ${cores.pink};
   padding: 5px;
   margin-bottom: 40px;
+  position: relative;
 
   ${TagContainer} {
-    margin-right: 8px;
+    margin-right: 5px;
   }
 `
 export const Titulo = styled.h3`
-  width: 92px;
+  width: 200px;
   height: 21px;
   top: 665px;
   left: 168px;
   font-size: 18px;
   color: ${cores.pink};
+  margin-top: 10px;
 `
 export const Descricao = styled.p`
   width: 456px;
@@ -33,4 +33,15 @@ export const Descricao = styled.p`
   font-weight: 400px;
   line-height: 22px;
   color: ${cores.pink};
+  margin-top: 16px;
+`
+export const Infos = styled.div`
+  position: absolute;
+  top: 16px;
+  right: 16px;
+`
+export const Links = styled.link`
+  width: 100px;
+  height: 25px;
+  text-decoration: none;
 `
