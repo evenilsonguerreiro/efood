@@ -1,8 +1,7 @@
 import ProductList from '../../ProductList'
 import Comidas from '../../../models/Comidas'
 
-import imagem from '../../../assets/image/imagem.png'
-import image from '../../../assets/image/image 1.png'
+import image from '../../../assets/image/image 3.png'
 
 const inicil: Comidas[] = [
   {
@@ -11,7 +10,7 @@ const inicil: Comidas[] = [
     description:
       'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
     infos: ['destaque', 'japones'],
-    image: imagem,
+    image: image,
     button: 'saiba mais'
   },
   {

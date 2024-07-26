@@ -14,6 +14,15 @@ export const Card = styled.div`
   ${TagContainer} {
     margin-right: 5px;
   }
+
+  .links {
+    width: 100px;
+    height: 25px;
+    text-decoration: none;
+    background-color: ${cores.pink};
+    color: ${cores.branco};
+    padding: 5px 10px;
+  }
 `
 export const Titulo = styled.h3`
   width: 200px;
@@ -34,14 +43,10 @@ export const Descricao = styled.p`
   line-height: 22px;
   color: ${cores.pink};
   margin-top: 16px;
+  margin-bottom: 10px;
 `
 export const Infos = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
-`
-export const Links = styled.link`
-  width: 100px;
-  height: 25px;
-  text-decoration: none;
 `

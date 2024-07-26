@@ -20,7 +20,9 @@ const Product = ({ title, description, image, infos }: Props) => (
     </Infos>
     <Titulo>{title}</Titulo>
     <Descricao>{description}</Descricao>
-    <Link to="/perfil">Saiba mais</Link>
+    <Link className="links" to="/perfil">
+      Saiba mais
+    </Link>
   </Card>
 )
 export default Product
