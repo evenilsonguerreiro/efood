@@ -1,8 +1,8 @@
-import ProductList from '../../ProductList'
-import Comidas from '../../../models/Comidas'
+import ProductList from '../../components/ProductList'
+import Comidas from '../../models/Comidas'
 
-import image from '../../../assets/image/image 1.png'
-import imagem from '../../../assets/image/imagem.png'
+import image from '../../assets/image/image 1.png'
+import imagem from '../../assets/image/imagem.png'
 
 const inicil: Comidas[] = [
   {

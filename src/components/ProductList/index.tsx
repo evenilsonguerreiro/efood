@@ -7,7 +7,7 @@ type Props = {
   comidas: Comidas[]
 }
 
-const ProductList = ({ background, comidas }: Props) => (
+const ProductList = ({ comidas }: Props) => (
   <Container>
     <div className="container">
       <List>
