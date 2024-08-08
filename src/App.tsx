@@ -1,26 +1,36 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import { EstiloGlobal } from './styles'
 import Home from './pages/Home'
 import Footer from './components/Footer'
+import Perfil from './pages/Perfil'
 
 const Rotas = () => (
   <Routes>
     <Route path="/" element={<Home />} />
+    <Route path="/perfil" element={<Perfil />} />
   </Routes>
 )
 
 function App() {
+  const location = useLocation()
+
+  const isPerfilPage = location.pathname === '/perfil'
+
   return (
-    <BrowserRouter>
+    <>
       <EstiloGlobal />
-      <div>
-        <Header />
-      </div>
+      {!isPerfilPage && <Header />}
       <Rotas />
-      <Footer />
-    </BrowserRouter>
+      {!isPerfilPage && <Footer />}
+    </>
   )
 }
 
-export default App
+export default function Root() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  )
+}

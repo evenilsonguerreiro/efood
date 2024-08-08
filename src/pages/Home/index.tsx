@@ -3,6 +3,7 @@ import Comidas from '../../models/Comidas'
 
 import image from '../../assets/image/image 1.png'
 import imagem from '../../assets/image/imagem.png'
+import Footer from '../../components/Footer'
 
 const inicil: Comidas[] = [
   {
@@ -63,6 +64,7 @@ const inicil: Comidas[] = [
 
 const Home = () => (
   <>
+    <header />
     <ProductList comidas={inicil} background="write" />
   </>
 )
