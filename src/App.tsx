@@ -1,15 +1,27 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Header from './components/Header'
 import { EstiloGlobal } from './styles'
-import Hero from './components/Hero'
+import Product from './components/Product'
+
+const rotas = createBrowserRouter([
+  {
+    path: '/',
+    element: (
+      <>
+        <Header />
+        <Product />
+      </>
+    )
+  }
+])
 
 function App() {
   return (
     <>
       <EstiloGlobal />
-      <div className="container">
-        <Header />
+      <div>
+        <RouterProvider router={rotas} />
       </div>
-      <Hero />
     </>
   )
 }

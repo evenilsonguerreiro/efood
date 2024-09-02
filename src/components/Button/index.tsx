@@ -8,7 +8,7 @@ type Props = {
   children: string
 }
 
-const Button = ({ type, title, to, children, onClick }: Props) => {
+const Button = ({ type, title, to, onClick, children }: Props) => {
   if (type === 'button') {
     return (
       <ButtonContainer type="button" title={title} onClick={onClick}>
@@ -22,5 +22,4 @@ const Button = ({ type, title, to, children, onClick }: Props) => {
     </ButtonLink>
   )
 }
-
 export default Button

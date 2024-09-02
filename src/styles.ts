@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 export const cores = {
   rosa: '#FFF8F2',
@@ -12,7 +12,6 @@ export const EstiloGlobal = createGlobalStyle`
   *{
   margin: 0;
   padding: 0;
-  border-sizing: border-box;
   font-family: Roboto , sans-serif;
 }
 
@@ -22,7 +21,7 @@ background-color: ${cores.branco};
 .container{
   max-width: 1024px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 }
